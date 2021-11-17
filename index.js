@@ -71,7 +71,7 @@ BcK.on("interactionCreate", async (interaction) => {
 
 // Log In
 console.log("%c\tLog-in client...", "background: teal; color: white");
-BcK.login(process.env.TOKEN);
+BcK.login(process.env.TOKEN_MAIN);
 
 // Servidor WEB
 const http = require("http");
