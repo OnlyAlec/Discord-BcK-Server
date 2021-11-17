@@ -14,7 +14,7 @@ const BcK = new Client({
   partials: ["MESSAGE", "CHANNEL", "REACTION"],
 });
 
-const prefix = process.env.PREFIX;
+const prefix = process.env.PREFIX_MAIN;
 const commandFolders = fs.readdirSync("./commands");
 BcK.commands = new Collection();
 BcK.auto_commands = new Collection();
