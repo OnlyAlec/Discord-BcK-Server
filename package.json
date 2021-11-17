@@ -1,0 +1,51 @@
+{
+  "name": "discord-bck",
+  "version": "1.0.0",
+  "description": "Bot Oficial del servidor BeckS",
+  "main": "index.js",
+  "dependencies": {
+    "@discordjs/builders": "^0.6.0",
+    "@discordjs/rest": "^0.1.0-canary.0",
+    "discord-api-types": "^0.23.1",
+    "discord.js": "^13.1.0",
+    "dotenv": "^10.0.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^14.1.0",
+    "@commitlint/config-conventional": "^14.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-formatter-mo": "^1.1.0",
+    "eslint-formatter-pretty": "^4.1.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.4",
+    "prettier": "2.4.1",
+    "standard-version": "^9.3.2"
+  },
+  "scripts": {
+    "lint": "eslint -f mo .",
+    "lint:fix": "eslint . --fix",
+    "postinstall": "husky install",
+	"release": "standard-version",
+    "release:minor": "standard-version --release-as minor",
+    "release:patch": "standard-version --release-as patch",
+    "release:major": "standard-version --release-as major"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OnlyAlec/Discord-BcK-Server.git"
+  },
+  "keywords": [
+    "Discord",
+    "Node",
+    "JS",
+    "JavaScript"
+  ],
+  "author": "OnlyAlec",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OnlyAlec/Discord-BcK-Server/issues"
+  },
+  "homepage": "https://github.com/OnlyAlec/Discord-BcK-Server#readme"
+}
