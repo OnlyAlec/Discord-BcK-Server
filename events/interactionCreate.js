@@ -2,13 +2,15 @@ module.exports = {
   name: "interactionCreate",
   async execute(interaction, BcK) {
     console.log(
-      `%c=>\t${interaction.user.tag} en #${interaction.channel.name} provoco una interaccion!.`,
+      `%c=>\t${interaction.user.tag} en #${interaction.channel.name} provoco una interaccion!.\n`,
       "color: white; background: purple;",
     );
-    console.log(
-      `%c=>\tCUSTOM_ID: ${interaction.customId}\n`,
-      "color: white; background: purple;",
-    );
+    if (interaction.customId !== undefined) {
+      console.log(
+        `%c=>\tCUSTOM_ID: ${interaction.customId}\n`,
+        "color: white; background: purple;",
+      );
+    }
     if (
       interaction.customId
         ? interaction.customId.includes("set_command")
@@ -31,9 +33,9 @@ module.exports = {
         : false
     ) {
       if (!interaction.isButton()) return;
-      await BcK.auto_commands
-        .find((command) => command.name === "chPlaylists")
-        .execute(interaction, BcK);
+      // TODO: Poner a playlist dentro del cliente, sin que sea un auto-command
+      const playlists = require("../commands/auto_commands/playlists.js");
+      await playlists.execute(interaction, BcK);
     }
   },
 };

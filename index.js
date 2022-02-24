@@ -25,9 +25,9 @@ for (const folder of commandFolders) {
     .filter((file) => file.endsWith(".js"));
   for (const file of commandFiles) {
     const command = require(`./commands/${folder}/${file}`);
-    if (command.data.name !== undefined) {
+    if (command.data?.name !== undefined) {
       BcK.commands.set(command.data.name, command);
-    } else {
+    } else if (command?.name.includes("auto")) {
       BcK.auto_commands.set(command.name, command);
     }
   }
