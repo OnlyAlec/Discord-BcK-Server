@@ -13,13 +13,14 @@
   "devDependencies": {
     "@commitlint/cli": "^14.1.0",
     "@commitlint/config-conventional": "^14.1.0",
+    "auto-changelog": "^2.4.0",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-formatter-mo": "^1.1.0",
     "eslint-formatter-pretty": "^4.1.0",
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-prettier": "^4.0.0",
-    "husky": "^7.0.4",
+    "husky": "^7.0.0",
     "prettier": "2.4.1",
     "standard-version": "^9.3.2"
   },
@@ -27,10 +28,12 @@
     "lint": "eslint -f mo .",
     "lint:fix": "eslint . --fix",
     "postinstall": "husky install",
+    "version": "auto-changelog -p && git add CHANGELOG.md",
     "release": "standard-version",
     "release:minor": "standard-version --release-as minor",
     "release:patch": "standard-version --release-as patch",
-    "release:major": "standard-version --release-as major"
+    "release:major": "standard-version --release-as major",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
