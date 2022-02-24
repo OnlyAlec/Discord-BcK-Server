@@ -15,13 +15,13 @@ module.exports = {
         .filter((file) => file.endsWith(".js"));
       for (const file of commandFiles) {
         const command = require(`.././commands/${folder}/${file}`);
-        if (command.data.name !== undefined) {
+        if (command.data?.name !== undefined) {
           commands.push(command.data.toJSON());
         }
       }
     }
 
-    const rest = new REST({ version: "9" }).setToken(process.env.TOKEN);
+    const rest = new REST({ version: "9" }).setToken(process.env.TOKEN_MAIN);
 
     (async () => {
       console.log("%cRecargando las apliaciones (/)", styles);
