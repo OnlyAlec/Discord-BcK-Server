@@ -7,7 +7,7 @@
   <h1> ❰ 𝘿𝙞𝙨𝙘𝙤𝙧𝙙  - 𝘽𝙘𝙆 𝘽𝙤𝙩 ❱ </h1>
   <!-- Buddy-->
   <a href="https://github.com/OnlyAlec/Discord-BcK/actions/">
-	  <img src="https://github.com/OnlyAlec/Discord-BcK-Server/actions/workflows/Testing.yml/badge.svg?branch=main">
+	  <img src="https://github.com/OnlyAlec/Discord-BcK-Server/actions/workflows/ESLint-Bot.yml/badge.svg?branch=main">
 	</a>
 	<img alt="GitHub last commit (branch)" src="https://img.shields.io/github/last-commit/OnlyAlec/Discord-BcK-Server/main?color=informational&logo=Github&style=flat">
 	<img alt="GitHub tag (latest SemVer)" src="https://img.shields.io/github/v/tag/OnlyAlec/Discord-BcK-Server?color=slateblue&label=Version&logo=Github&sort=semver"><br>
