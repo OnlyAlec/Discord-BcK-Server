@@ -3,7 +3,8 @@ module.exports = {
   description:
     "Detecta que juego esta juganado y renombra el canal de [ Random ]",
   execute(BcK) {
-    const id_ch_random = "833915268942135326"; // ID canal que se conectan
+    // ID canal que se conectan
+    const id_ch_random = "833915268942135326";
 
     try {
       const ch_random = BcK.channels.cache.get("833915268942135326");
@@ -94,7 +95,8 @@ function calculateGame(channel, BcK) {
     game: [],
   };
   const members_in_channel = channel.members;
-  const ch_rename = BcK.channels.cache.get("834220871177994250"); // Canal que se cambia de nombre
+  // Canal que se cambia de nombre
+  const ch_rename = BcK.channels.cache.get("834220871177994250");
 
   // Por cada miembro, detecte que juego esta y hacer un array(lista) agregando el juego y la sumando la persona
   // Si el juego ya esta entonces agrega un contador al juego.

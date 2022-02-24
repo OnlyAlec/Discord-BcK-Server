@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 /* eslint-disable no-useless-escape */
 // TODO: Exportar la parte que usa request => fetch
 

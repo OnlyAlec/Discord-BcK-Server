@@ -24,12 +24,15 @@ module.exports = {
         .then(async (msg) => {
           let value = await IsVoice(interaction, 0, BcK);
           if (value === 1) {
-            playlistSelected(interaction); // Si esta en VC [value = 1]
+            // Si esta en VC [value = 1]
+            playlistSelected(interaction);
           } else if (value === 2) {
-            sendEmbed(interaction, (value = 2)); // Si esta en AFK [value = 2]
+            // Si esta en AFK [value = 2]
+            sendEmbed(interaction, (value = 2));
           } else {
+            // Si no esta conectado a VC [value = 0]
             const playlistSelect = undefined;
-            sendEmbed(interaction, value, playlistSelect, BcK); // Si no esta conectado a VC [value = 0]
+            sendEmbed(interaction, value, playlistSelect, BcK);
           }
           setTimeout(() => msg.delete(), 1000);
         });

@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 // TODO: Pasar lo de axios a fetch
 
 const axios = require("axios");
