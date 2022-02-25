@@ -30,6 +30,7 @@
     "standard-version": "^9.3.2"
   },
   "scripts": {
+    "start": "node index.js",
     "lint": "eslint -f mo .",
     "lint:fix": "eslint . --fix",
     "postinstall": "husky install",
