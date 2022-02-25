@@ -30,7 +30,7 @@
     "standard-version": "^9.3.2"
   },
   "scripts": {
-    "start": "node index.js",
+    "start": "./node_modules/node/bin/node index.js",
     "lint": "eslint -f mo .",
     "lint:fix": "eslint . --fix",
     "postinstall": "husky install",
@@ -45,12 +45,7 @@
     "type": "git",
     "url": "git+https://github.com/OnlyAlec/Discord-BcK-Server.git"
   },
-  "keywords": [
-    "Discord",
-    "Node",
-    "JS",
-    "JavaScript"
-  ],
+  "keywords": [],
   "author": "OnlyAlec",
   "license": "ISC",
   "bugs": {
