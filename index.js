@@ -73,41 +73,10 @@ BcK.on("interactionCreate", async (interaction) => {
 console.log("%c\tLog-in client...", "background: teal; color: white");
 BcK.login(process.env.TOKEN_MAIN);
 
-// Webhook Heroku => Discord + Servidor Web
-const express = require("express");
-const app = express();
-const request = require("request");
-const bodyParser = require("body-parser");
-
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
-
-app.post("/webhook", (req, res) => {
-  const Payload = req.body;
-  // Respond To Heroku Webhook
-  res.sendStatus(200);
-
-  const options = {
-    method: "POST",
-    url: "",
-    headers: {
-      "Content-type": "application/json",
-    },
-    // Format JSON DATA
-    body: JSON.stringify({
-      content: `This is A Webhook notification!A build for your app ${Payload.data.app.name} was just triggered`,
-    }),
-  };
-  request(options, (error, response) => {
-    if (error) throw new Error(error);
-    console.log(response);
-  });
+// Servidor WEB
+const http = require("http");
+const server = http.createServer((req, res) => {
   res.writeHead(200);
   res.end("ok");
 });
-app.listen(3000, () =>
-  console.log(
-    "%c\tServer Web || Port 3000\n",
-    "background: teal; color: white\n",
-  ),
-);
+server.listen(3000);
