@@ -23,3 +23,4 @@ jobs:
         uses: GitTools/actions/execute@v0.9.13
         with:
           useConfigFile: true
+          configFilePath: GitVersion.yml
