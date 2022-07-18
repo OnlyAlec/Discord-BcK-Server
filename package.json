@@ -20,13 +20,12 @@
     "@commitlint/config-conventional": "^16.2.1",
     "auto-changelog": "^2.4.0",
     "eslint": "^8.9.0",
-    "eslint-config-prettier": "^8.4.0",
+    "eslint-config-prettier": "^8.5.0",
     "eslint-formatter-mo": "^1.1.1",
-    "eslint-formatter-pretty": "^4.1.0",
     "eslint-plugin-import": "^2.25.4",
-    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "husky": "^7.0.4",
-    "prettier": "^2.5.1",
+    "prettier": "^2.7.1",
     "standard-version": "^9.3.2"
   },
   "scripts": {
