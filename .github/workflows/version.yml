@@ -11,7 +11,15 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      
       - name: GitTools
-        uses: GitTools/actions@v0.9.13
+      - uses: GitTools/actions@v0.9.13
+      
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+        
+      - name: Determine Version
+        uses: GitTools/actions/execute@v0.9.13
+        with:
+          useConfigFile: true
