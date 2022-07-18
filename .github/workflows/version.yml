@@ -14,10 +14,10 @@ jobs:
      - uses: actions/checkout@v3
      
      - name: Fetch all history for all tags and branches
-     - run: |
+       run: |
         git fetch --prune --unshallow
         
-       name: Build code
+     - name: Build code
      - name: Install GitVersion
        uses: GitTools/actions/gitversion/setup@v0.9.13
        with:
