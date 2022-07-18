@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: GitTools
-      - uses: GitTools/actions@v0.9.13
+        uses: GitTools/actions@v0.9.13
       
       - name: Checkout
         uses: actions/checkout@v3
