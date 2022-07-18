@@ -12,15 +12,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v3 
         with:
           fetch-depth: 0
           
       - name: GitTools
-        uses: GitTools/actions@v0.9.13
+        uses: gittools/actions/gitversion/execute@v0.9.13
         
       - name: Determine Version
-        uses: GitTools/actions/execute@v0.9.13
+        uses: gittools/actions/gitversion/execute@v0.9.13
         with:
           useConfigFile: true
           configFilePath: GitVersion.yml
