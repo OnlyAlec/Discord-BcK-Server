@@ -19,7 +19,7 @@ jobs:
         
        name: Build code
      - name: Install GitVersion
-       uses: GitTools/actions/gitversion/setup@v0.9.13
+     - uses: GitTools/actions/gitversion/setup@v0.9.13
        with:
         versionSpec: '5.x'
           
