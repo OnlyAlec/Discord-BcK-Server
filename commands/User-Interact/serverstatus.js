@@ -17,7 +17,7 @@ module.exports = {
       option
         .setName("ip")
         .setDescription("Dirreccion IP del servidor!")
-        .setRequired(true),
+        .setRequired(true)
     ),
   async execute(interaction, BcK) {
     await interaction.deferReply();
@@ -54,7 +54,7 @@ function ValidateIPaddress(message, IPC) {
       return true;
     } else {
       message.editReply(
-        "*La direccion **IP** parace ser **Invalida**!*.\nIntenta de nuevo!",
+        "*La direccion **IP** parace ser **Invalida**!*.\nIntenta de nuevo!"
       );
       return false;
     }
@@ -62,7 +62,7 @@ function ValidateIPaddress(message, IPC) {
     return true;
   } else {
     message.editReply(
-      "*La direccion **URL** parace ser **Invalida**!*.\nIntenta de nuevo!",
+      "*La direccion **URL** parace ser **Invalida**!*.\nIntenta de nuevo!"
     );
     return false;
   }
@@ -107,10 +107,10 @@ function getStatus(interaction, url, mcIP) {
             .setAuthor(
               "BeckS - Minecraft!",
               "https://i.imgur.com/9mMUVDh.png",
-              "https://github.com/OnlyAlec/Discord-BcK-Server",
+              "https://github.com/OnlyAlec/Discord-BcK-Server"
             )
             .setThumbnail(
-              "https://img.icons8.com/fluent/344/minecraft-logo.png",
+              "https://img.icons8.com/fluent/344/minecraft-logo.png"
             )
             .addFields(
               {
@@ -134,12 +134,12 @@ function getStatus(interaction, url, mcIP) {
               {
                 name: "Peticion de:",
                 value: `➤ <@${interaction.user.id}>`,
-              },
+              }
             )
             .setTimestamp()
             .setFooter(
               "Comando /mc_server \nCon este comando puedes ver el estado del servidor de Minecraft!",
-              "https://i.imgur.com/TKC30qM.png",
+              "https://i.imgur.com/TKC30qM.png"
             );
           status = McOn;
         } else {
@@ -150,7 +150,7 @@ function getStatus(interaction, url, mcIP) {
             .setAuthor(
               "BeckS - Minecraft!",
               "https://i.imgur.com/9mMUVDh.png",
-              "https://github.com/OnlyAlec/Discord-BcK-Server",
+              "https://github.com/OnlyAlec/Discord-BcK-Server"
             )
             .setThumbnail("https://i.imgur.com/NhQIt0m.png")
             .addFields(
@@ -169,12 +169,12 @@ function getStatus(interaction, url, mcIP) {
               {
                 name: "Peticion de:",
                 value: ` ➤ <@${interaction.user.id}>`,
-              },
+              }
             )
             .setTimestamp()
             .setFooter(
               "Comando /mc_server \nCon este comando puedes ver el estado del servidor de Minecraft!",
-              "https://i.imgur.com/TKC30qM.png",
+              "https://i.imgur.com/TKC30qM.png"
             );
           status = McOff;
         }

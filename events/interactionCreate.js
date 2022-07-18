@@ -3,12 +3,12 @@ module.exports = {
   async execute(interaction, BcK) {
     console.log(
       `%c=>\t${interaction.user.tag} en #${interaction.channel.name} provoco una interaccion!.\n`,
-      "color: white; background: purple;",
+      "color: white; background: purple;"
     );
     if (interaction.customId !== undefined) {
       console.log(
         `%c=>\tCUSTOM_ID: ${interaction.customId}\n`,
-        "color: white; background: purple;",
+        "color: white; background: purple;"
       );
     }
     if (

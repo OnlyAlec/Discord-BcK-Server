@@ -6,7 +6,7 @@ module.exports = {
 
     const guild = BcK.guilds.cache.get("821845551921233920");
     let online_Members = guild.members.cache.filter(
-      (member) => member.presence !== null && member.user.bot === false,
+      (member) => member.presence !== null && member.user.bot === false
     ).size;
     const Channel = {
       miembros: BcK.channels.cache.get("844459937224589312"),
@@ -54,11 +54,11 @@ module.exports = {
         ) {
           console.log(
             `\n%cOffline => Online`,
-            "background: #59667A; color: white",
+            "background: #59667A; color: white"
           );
           console.log(
             `%cUsuarios en Linea: ${online_Members} `,
-            "background: #4682B4; color: white",
+            "background: #4682B4; color: white"
           );
           online_Members++;
           Channel.enlinea.setName(`🟢 ᴇɴ ʟɪɴᴇᴀ: ${online_Members}`);
@@ -69,11 +69,11 @@ module.exports = {
         ) {
           console.log(
             `\n%cOnline => Offline`,
-            "background: #59667A; color: white",
+            "background: #59667A; color: white"
           );
           console.log(
             `%cUsuarios en Linea: ${online_Members} `,
-            "background: #4682B4; color: white",
+            "background: #4682B4; color: white"
           );
           online_Members--;
           Channel.enlinea.setName(`🟢 ᴇɴ ʟɪɴᴇᴀ: ${online_Members}`);
@@ -90,7 +90,7 @@ function initialstats(guild, Channel, counter, online_Members) {
   console.log(
     `%cStart!\t%cUsuarios en Linea: ${online_Members}  \n`,
     "background: #1c3728; color: white",
-    "background: #4682B4; color: white",
+    "background: #4682B4; color: white"
   );
 
   Channel.miembros.setName(`👥  ᴍɪᴇᴍʙʀᴏꜱ: ${allmembers}`);

@@ -63,7 +63,7 @@ BcK.on("interactionCreate", async (interaction) => {
     BcK.users.cache
       .get("443998731310858242")
       .send(
-        `Hubo un error en el modulo: ${prefix} **${interaction.commandName}**`,
+        `Hubo un error en el modulo: ${prefix} **${interaction.commandName}**`
       );
     BcK.users.cache.get("443998731310858242").send(`\`\`\`${error}\`\`\``);
   }

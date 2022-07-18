@@ -7,7 +7,7 @@ module.exports = {
     }).format(Date.now());
     console.log(
       `%cSesion iniciada como ${BcK.user.tag}! ${nowmoment}`,
-      "background: teal; color: white\n",
+      "background: teal; color: white\n"
     );
     // Comandos a ejecutar
     await require("../utils/deploy.js").execute();

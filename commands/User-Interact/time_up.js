@@ -16,7 +16,7 @@ module.exports = {
       .setAuthor(
         "BecKS - Tiempo en linea!",
         "https://i.imgur.com/9mMUVDh.png",
-        "https://github.com/OnlyAlec/Discord-BcK-Server",
+        "https://github.com/OnlyAlec/Discord-BcK-Server"
       )
       .setThumbnail("https://i.imgur.com/OeV5VES.gif")
       .addFields({
@@ -26,7 +26,7 @@ module.exports = {
       .setTimestamp()
       .setFooter(
         "Comando: /timeup \nCheca si el bot esta vivo y cuanto tiempo lo a estado!.",
-        "https://i.imgur.com/TKC30qM.png",
+        "https://i.imgur.com/TKC30qM.png"
       );
 
     const emoji = new MessageActionRow().addComponents(
@@ -35,7 +35,7 @@ module.exports = {
         .setLabel("")
         .setStyle("SECONDARY")
         .setEmoji("🤖")
-        .setDisabled(true),
+        .setDisabled(true)
     );
     await interaction.editReply({
       components: [emoji],

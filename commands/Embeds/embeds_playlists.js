@@ -10,7 +10,7 @@ module.exports = {
   async execute(interaction) {
     console.log(
       `%c❖ \t Se envio un embed playlist `,
-      "background: #AD8BF0; color: white",
+      "background: #AD8BF0; color: white"
     );
     await interaction.deferReply();
 
@@ -20,10 +20,10 @@ module.exports = {
       .setAuthor(
         "BecKS - Playlists!",
         "https://i.imgur.com/9mMUVDh.png",
-        "https://github.com/OnlyAlec/Discord-BcK-Server",
+        "https://github.com/OnlyAlec/Discord-BcK-Server"
       )
       .setDescription(
-        "***Para escuchar solo dale click a los botones de hasta abajo!***",
+        "***Para escuchar solo dale click a los botones de hasta abajo!***"
       )
       .setThumbnail("https://img.icons8.com/fluent/344/music.png")
       .addFields(
@@ -66,11 +66,11 @@ module.exports = {
           name: "FDM",
           value: "🎤",
           inline: true,
-        },
+        }
       )
       .setFooter(
         "Muestra todas las playlist que ponemos a tu disposicion!.",
-        "https://i.imgur.com/TKC30qM.png",
+        "https://i.imgur.com/TKC30qM.png"
       )
       .setTimestamp();
 
@@ -99,7 +99,7 @@ module.exports = {
         .setCustomId(`${this.data.name}} : 🤘🏻`)
         .setLabel("")
         .setStyle("SECONDARY")
-        .setEmoji("🤘🏻"),
+        .setEmoji("🤘🏻")
     );
 
     const select2 = new MessageActionRow().addComponents(
@@ -117,7 +117,7 @@ module.exports = {
         .setCustomId(`${this.data.name}} : 🎤`)
         .setLabel("")
         .setStyle("SECONDARY")
-        .setEmoji("🎤"),
+        .setEmoji("🎤")
     );
 
     await interaction.editReply({

@@ -19,10 +19,10 @@ module.exports = {
 
     const guild = interaction.guild;
     const online_Members = guild.members.cache.filter(
-      (member) => member.presence !== null && member.user.bot === false,
+      (member) => member.presence !== null && member.user.bot === false
     ).size;
     const bots = guild.members.cache.filter(
-      (member) => member.user.bot === true,
+      (member) => member.user.bot === true
     ).size;
 
     const stats = new MessageEmbed()
@@ -30,11 +30,11 @@ module.exports = {
       .setAuthor(
         `${guild.name} - Estadisticas`,
         "https://cdn.discordapp.com/icons/821845551921233920/9bcc1eb4e9a45b77b4a59d65353b1eb3.png",
-        "https://github.com/OnlyAlec/Discord-BcK-Server",
+        "https://github.com/OnlyAlec/Discord-BcK-Server"
       )
       .setTitle("Estadisticas del servidor")
       .setDescription(
-        "Aqui podras observar las estadisticas basicas del servidor en el que te encuentras!",
+        "Aqui podras observar las estadisticas basicas del servidor en el que te encuentras!"
       )
       .setThumbnail("https://i.imgur.com/GYf6G4v.png")
       .addFields(
@@ -56,7 +56,7 @@ module.exports = {
         {
           name: "\u200B",
           value: "\u200B",
-        },
+        }
       );
     guild.roles.cache.forEach((role) => {
       const notRole = [
@@ -94,12 +94,12 @@ module.exports = {
           name: "💠 Prefijo bot:",
           value: `   ${process.env.PREFIX}   `,
           inline: true,
-        },
+        }
       )
       .setTimestamp()
       .setFooter(
         "Comando: /stats \n Con este comando ves las estadisticas basicas del servidor en el que estas. owo",
-        "https://cdn.discordapp.com/icons/821845551921233920/9bcc1eb4e9a45b77b4a59d65353b1eb3.png",
+        "https://cdn.discordapp.com/icons/821845551921233920/9bcc1eb4e9a45b77b4a59d65353b1eb3.png"
       );
 
     const bt = new MessageActionRow().addComponents(
@@ -107,7 +107,7 @@ module.exports = {
         .setCustomId(`${this.data.name} : Refresh`)
         .setLabel("Recargar")
         .setStyle("SECONDARY")
-        .setEmoji("🔄"),
+        .setEmoji("🔄")
     );
 
     await interaction
@@ -115,7 +115,7 @@ module.exports = {
       .then((m) => {
         const ping = m.createdTimestamp - interaction.createdTimestamp;
         const fieldMod = stats.fields.findIndex(
-          (cms) => cms.name === "💻 Ping con el bot:",
+          (cms) => cms.name === "💻 Ping con el bot:"
         );
 
         stats.fields[fieldMod] = {

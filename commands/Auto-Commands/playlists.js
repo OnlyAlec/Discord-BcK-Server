@@ -104,11 +104,11 @@ async function IsVoice(interaction, value, BcK) {
       .send(
         `**Playlist!**\n> ${interaction.customId.split(": ")[1]} # <#${
           member.voice.channel.id
-        }>`,
+        }>`
       );
     console.log(
       `%c❖\t${member.user.username} solicito playlist en ${member.voice.channel.name}`,
-      "background:#CD5C5C; color: white",
+      "background:#CD5C5C; color: white"
     );
     return 1;
   } else {
@@ -154,11 +154,11 @@ async function sendEmbed(interaction, value, playlistSelect, BcK) {
         .setAuthor(
           "BecKS - Playlists!",
           "https://i.imgur.com/9mMUVDh.png",
-          "https://github.com/OnlyAlec/Discord-BcK-Server",
+          "https://github.com/OnlyAlec/Discord-BcK-Server"
         )
         .setDescription("En un momento se conectara <@887025556967817287>!")
         .setThumbnail(
-          "https://c.tenor.com/Qakq7KgQD1cAAAAi/fox-listening-to-music.gif",
+          "https://c.tenor.com/Qakq7KgQD1cAAAAi/fox-listening-to-music.gif"
         )
         .addFields({
           name: "La playlist que solicitaste fue:",
@@ -166,7 +166,7 @@ async function sendEmbed(interaction, value, playlistSelect, BcK) {
         })
         .setFooter(
           `Peticion de: ${interaction.user.username}!.`,
-          interaction.user.displayAvatarURL(),
+          interaction.user.displayAvatarURL()
         )
         .setTimestamp();
 
@@ -176,7 +176,7 @@ async function sendEmbed(interaction, value, playlistSelect, BcK) {
           .setLabel("")
           .setStyle("SECONDARY")
           .setEmoji("🎶")
-          .setDisabled(true),
+          .setDisabled(true)
       );
 
       await interaction.followUp({
@@ -194,7 +194,7 @@ async function sendEmbed(interaction, value, playlistSelect, BcK) {
         .setAuthor(
           "BecKS - Playlists!",
           "https://i.imgur.com/9mMUVDh.png",
-          "https://github.com/OnlyAlec/Discord-BcK-Server",
+          "https://github.com/OnlyAlec/Discord-BcK-Server"
         )
         .setThumbnail("https://img.icons8.com/fluent/344/music.png")
         .addFields({
@@ -217,7 +217,7 @@ async function sendEmbed(interaction, value, playlistSelect, BcK) {
         .setAuthor(
           "BecKS - Playlists!",
           "https://i.imgur.com/9mMUVDh.png",
-          "https://github.com/OnlyAlec/Discord-BcK-Server",
+          "https://github.com/OnlyAlec/Discord-BcK-Server"
         )
         .setThumbnail("https://img.icons8.com/fluent/344/music.png")
         .addFields(
@@ -229,11 +229,11 @@ async function sendEmbed(interaction, value, playlistSelect, BcK) {
             name: "『 Te esperamos a que te conectes a uno ! 』",
             value:
               "Tienes 5 minutos para conectarte, de lo contrario se cancelara la operacion!",
-          },
+          }
         )
         .setFooter(
           `Peticion de: ${interaction.user.username}!.`,
-          interaction.user.displayAvatarURL(),
+          interaction.user.displayAvatarURL()
         )
         .setTimestamp();
 
@@ -248,7 +248,7 @@ async function sendEmbed(interaction, value, playlistSelect, BcK) {
           .setCustomId(`${customId} : Cancel`)
           .setLabel("")
           .setStyle("PRIMARY")
-          .setEmoji("❌"),
+          .setEmoji("❌")
       );
 
       await interaction
@@ -269,7 +269,7 @@ async function sendEmbed(interaction, value, playlistSelect, BcK) {
           .setAuthor(
             "BecKS - Playlists!",
             "https://i.imgur.com/9mMUVDh.png",
-            "https://github.com/OnlyAlec/Discord-BcK-Server",
+            "https://github.com/OnlyAlec/Discord-BcK-Server"
           )
           .setThumbnail("https://imgur.com/u7FaMSh.png")
           .addFields({
@@ -278,7 +278,7 @@ async function sendEmbed(interaction, value, playlistSelect, BcK) {
           })
           .setFooter(
             `Peticion de: ${interaction.user.username}!.`,
-            interaction.user.displayAvatarURL(),
+            interaction.user.displayAvatarURL()
           )
           .setTimestamp();
 
@@ -288,7 +288,7 @@ async function sendEmbed(interaction, value, playlistSelect, BcK) {
             .setLabel("")
             .setStyle("PRIMARY")
             .setEmoji("❌")
-            .setDisabled(true),
+            .setDisabled(true)
         );
 
         await interaction.client.users.cache.get(interaction.user.id).send({
@@ -300,7 +300,7 @@ async function sendEmbed(interaction, value, playlistSelect, BcK) {
   }
   console.log(
     `%c\t ❖\tSe envio un embed ${value}   `,
-    "background: #AD8BF0; color: white",
+    "background: #AD8BF0; color: white"
   );
 }
 

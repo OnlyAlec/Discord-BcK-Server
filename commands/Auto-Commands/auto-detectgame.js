@@ -74,10 +74,10 @@ module.exports = {
         newMember.member.voice.channelId === id_ch_random
       ) {
         const oldGame = oldMember?.activities?.find(
-          (act) => act.type === "PLAYING",
+          (act) => act.type === "PLAYING"
         )?.name;
         const newGame = newMember?.activities?.find(
-          (act) => act.type === "PLAYING",
+          (act) => act.type === "PLAYING"
         )?.name;
 
         if (oldGame !== newGame) {
@@ -105,7 +105,7 @@ function calculateGame(channel, BcK) {
   members_in_channel.map((member) => {
     if (member.presence?.activities.length >= 1) {
       const userGame = member.presence?.activities.find(
-        (activity) => activity.type === "PLAYING",
+        (activity) => activity.type === "PLAYING"
       );
       if (userGame !== undefined && !(userGame in games)) {
         games[userGame] = 1;
@@ -125,7 +125,7 @@ function calculateGame(channel, BcK) {
   if (max.game.length === 1) {
     console.log(
       `\t%c"${channel.name}" ahora juega "${max.game}"\n`,
-      "background: #CE796B; color: white",
+      "background: #CE796B; color: white"
     );
     BcK.channels.cache
       .get("832335604611547186")
@@ -139,7 +139,7 @@ function calculateGame(channel, BcK) {
       `\t%cEn "${channel.name}" hay varios juegos! \n%c\t%cJuegos: ${max.game}\n`,
       "background: #CE796B; color: white",
       "",
-      "background: #CE796B; color: white",
+      "background: #CE796B; color: white"
     );
     ch_rename.setName("Varios juegos! 🕹");
   } else if (ch_rename.name === "No estan jugando! 😥") {
@@ -148,12 +148,12 @@ function calculateGame(channel, BcK) {
       .send(`> Usuario sin juego! <#${channel.id}>`);
     console.log(
       "\t%cNo hay juego leido!\n",
-      "background: #CE796B; color: white",
+      "background: #CE796B; color: white"
     );
   } else if (ch_rename.name !== "No estan jugando! 😥") {
     console.log(
       `\t%cEn "${channel.name}" dejaron de jugar!\n`,
-      "background: #CE796B; color: white",
+      "background: #CE796B; color: white"
     );
     BcK.channels.cache
       .get("832335604611547186")

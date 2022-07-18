@@ -12,7 +12,7 @@ module.exports = {
       option
         .setName("usuario")
         .setDescription("El usuario que quieres saber!")
-        .setRequired(true),
+        .setRequired(true)
     ),
   async execute(interaction) {
     await interaction.deferReply();
@@ -24,7 +24,7 @@ module.exports = {
       const taggedUser = await interaction.guild.members.fetch(IDUser);
       const userGame =
         taggedUser.presence?.activities.find(
-          (activity) => activity.type === "PLAYING",
+          (activity) => activity.type === "PLAYING"
         ) || null;
 
       if (!taggedUser.presence) {
@@ -33,12 +33,12 @@ module.exports = {
           .setTitle(
             `Actividad de ${
               taggedUser.nickname ? taggedUser.nickname : taggedUser.username
-            }`,
+            }`
           )
           .setAuthor(
             "BecKS - ¿Que esta jugando?",
             "https://i.imgur.com/9mMUVDh.png",
-            "https://github.com/OnlyAlec/Discord-BcK-Server",
+            "https://github.com/OnlyAlec/Discord-BcK-Server"
           )
           .setThumbnail("https://img.icons8.com/fluent/8x/no-network.png")
           .addFields({
@@ -48,7 +48,7 @@ module.exports = {
           })
           .setFooter(
             `Comando: /game_pls \nPeticion de: ${interaction.user.username}!.`,
-            interaction.user.displayAvatarURL(),
+            interaction.user.displayAvatarURL()
           )
           .setTimestamp();
 
@@ -58,7 +58,7 @@ module.exports = {
             .setLabel("")
             .setStyle("SECONDARY")
             .setEmoji("😴")
-            .setDisabled(true),
+            .setDisabled(true)
         );
 
         await interaction.editReply({
@@ -74,12 +74,12 @@ module.exports = {
           .setTitle(
             `Actividad de ${
               taggedUser.nickname ? taggedUser.nickname : taggedUser.username
-            }`,
+            }`
           )
           .setAuthor(
             "BecKS - ¿Que esta jugando?",
             "https://i.imgur.com/9mMUVDh.png",
-            "https://github.com/OnlyAlec/Discord-BcK-Server",
+            "https://github.com/OnlyAlec/Discord-BcK-Server"
           )
           .setThumbnail(icon)
           .addFields(
@@ -90,11 +90,11 @@ module.exports = {
             {
               name: `❮        *${userGame.name}*        ❯`,
               value: "\u200B",
-            },
+            }
           )
           .setFooter(
             `Comando: /game_pls \nPeticion de: ${interaction.user.username}!.`,
-            interaction.user.displayAvatarURL(),
+            interaction.user.displayAvatarURL()
           )
           .setTimestamp();
 
@@ -104,7 +104,7 @@ module.exports = {
             .setLabel("")
             .setStyle("SECONDARY")
             .setEmoji("🤩")
-            .setDisabled(true),
+            .setDisabled(true)
         );
 
         await interaction.editReply({ components: [emoji], embeds: [game] });
@@ -114,12 +114,12 @@ module.exports = {
           .setTitle(
             `Actividad de ${
               taggedUser.nickname ? taggedUser.nickname : taggedUser.username
-            }`,
+            }`
           )
           .setAuthor(
             "BecKS - ¿Que esta jugando?",
             "https://i.imgur.com/9mMUVDh.png",
-            "https://github.com/OnlyAlec/Discord-BcK-Server",
+            "https://github.com/OnlyAlec/Discord-BcK-Server"
           )
           .setThumbnail("https://i.imgur.com/j2Pc9Gl.png")
           .addFields(
@@ -130,11 +130,11 @@ module.exports = {
             {
               name: " 🕹  Puedes invitalo a jugar...",
               value: "\u200B",
-            },
+            }
           )
           .setFooter(
             `Comando: /game_pls \nPeticion de: ${interaction.user.username}!.`,
-            interaction.user.displayAvatarURL(),
+            interaction.user.displayAvatarURL()
           )
           .setTimestamp();
 
@@ -144,7 +144,7 @@ module.exports = {
             .setLabel("")
             .setStyle("SECONDARY")
             .setEmoji("😥")
-            .setDisabled(true),
+            .setDisabled(true)
         );
 
         await interaction.editReply({ components: [emoji], embeds: [NoGame] });
@@ -182,7 +182,7 @@ function getSearch(urlsearch) {
         iconf = urlrequest;
         console.log(
           `%c\t⇢ HTTPS STATUS: ${statusCode}\nIcon: ${iconf}`,
-          "background: #CE796B; color: white",
+          "background: #CE796B; color: white"
         );
 
         resolve(iconf);
@@ -192,11 +192,11 @@ function getSearch(urlsearch) {
         console.log(
           new Error(
             "%c\t⇢ Icon Not Found - API Error",
-            "background: #CE796B; color: white",
-          ),
+            "background: #CE796B; color: white"
+          )
         );
         resolve(
-          "https://cdn-icons.flaticon.com/png/512/4467/premium/4467135.png?token=exp=1641424897~hmac=15b7faed03f7ffe197d0f350162c2867",
+          "https://cdn-icons.flaticon.com/png/512/4467/premium/4467135.png?token=exp=1641424897~hmac=15b7faed03f7ffe197d0f350162c2867"
         );
       });
   });

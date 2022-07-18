@@ -29,9 +29,9 @@ module.exports = {
         await rest.put(
           Routes.applicationGuildCommands(
             process.env.CLIENTID,
-            process.env.GUILDID,
+            process.env.GUILDID
           ),
-          { body: commands },
+          { body: commands }
         );
         console.log("%cSatisfactorio!\n", styles);
       } catch (error) {
