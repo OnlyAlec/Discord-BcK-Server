@@ -9,18 +9,22 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3 
-        with:
-          fetch-depth: 0
-          
-      - name: GitTools
-        uses: gittools/actions/gitversion/execute@v0.9.13
+     - uses: actions/checkout@v3
+     
+     - name: Fetch all history for all tags and branches
+     - run: |
+        git fetch --prune --unshallow
         
-      - name: Determine Version
-        uses: gittools/actions/gitversion/execute@v0.9.13
-        with:
-          useConfigFile: true
-          configFilePath: GitVersion.yml
+       name: Build code
+     - name: Install GitVersion
+       uses: GitTools/actions/gitversion/setup@v0.9.13
+          with:
+             versionSpec: '5.x'
+          
+      - name: Use GitVersion
+        id: gitversion # step id used as reference for output values
+        uses: GitTools/actions/gitversion/execute@v0.9.13
+      - run: |
+          echo "FullSemVer: ${{ steps.gitversion.outputs.fullSemVer }}"
