@@ -1,6 +1,6 @@
 {
   "name": "discord-bck",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Bot Oficial del servidor BeckS",
   "main": "index.js",
   "dependencies": {
@@ -33,7 +33,7 @@
     "lint": "eslint -f mo .",
     "lint:fix": "eslint . --fix",
     "postinstall": "husky install",
-    "version": "auto-changelog -p -u && git add CHANGELOG.md",
+    "version": "git fetch --prune && auto-changelog -p -u && git add CHANGELOG.md",
     "release": "standard-version",
     "release:minor": "standard-version --release-as minor",
     "release:patch": "standard-version --release-as patch",
