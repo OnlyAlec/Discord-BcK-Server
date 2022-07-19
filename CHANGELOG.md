@@ -1,31 +1,3 @@
-# Changelog
-
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
-
-## [1.1.0](https://github.com/OnlyAlec/Discord-BcK-Server/compare/v1.0.2...v1.1.0) (2022-07-19)
-
-
-### Features
-
-* :arrow_up: husky Changes ([7bbe42d](https://github.com/OnlyAlec/Discord-BcK-Server/commits/7bbe42dd8f7d14d35fef8804ed2780915722fd98))
-* :pencil2: change File Dir - ServerStatus ([d430c21](https://github.com/OnlyAlec/Discord-BcK-Server/commits/d430c21c3f314e3a5813fc7b8745611883d41e49))
-* :sparkles: Nuevo AutoComando para Tetr.io ([0b154e4](https://github.com/OnlyAlec/Discord-BcK-Server/commits/0b154e4f2bf89fff17586214ed4e0f4e92311ec6))
-* :sparkles: SandBoxCode ([9ef7a63](https://github.com/OnlyAlec/Discord-BcK-Server/commits/9ef7a639e86c611837727f76869942b4abd28e5a))
-* ✨ Heroku ([febaf84](https://github.com/OnlyAlec/Discord-BcK-Server/commits/febaf84f5e12f3b062f4fb5f706267e94be84466))
-* ✨ Heroku ([79867b7](https://github.com/OnlyAlec/Discord-BcK-Server/commits/79867b73784d8b72c69b8cd498c7fd17d9b8b4fb))
-
-
-### Bug Fixes
-
-* :arrow_up: update Dependencies ([a5bbfcd](https://github.com/OnlyAlec/Discord-BcK-Server/commits/a5bbfcde1ce60e597f617c13e9023fd5fcb582c3))
-* ⬆️ update Dependencies ([bcc71e4](https://github.com/OnlyAlec/Discord-BcK-Server/commits/bcc71e4553a7b34b331248bc6b42c0b1604ea666))
-* ⬆️ update Dependencies ([d16d73f](https://github.com/OnlyAlec/Discord-BcK-Server/commits/d16d73fcad19b2dda5012fc8c10073fe837c5e95))
-
-
-### Beauty Files
-
-* :art: nuevo estilo de JS ([0f41af1](https://github.com/OnlyAlec/Discord-BcK-Server/commits/0f41af18b323fac9c7cbac6668a0f07e7b872db1))
-
 ### Changelog
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
