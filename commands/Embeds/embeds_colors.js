@@ -2,7 +2,7 @@ const { SlashCommandBuilder } = require("@discordjs/builders");
 const { MessageEmbed, MessageActionRow, MessageButton } = require("discord.js");
 
 module.exports = {
-  data: new SlashCommandBuilder()
+  data: new SlashCommandBuilder(),
   // .setName("embeds_colors")
   // .setDescription("Muestra los colores disponibles para los roles!"),
   name: "embeds_colores",
