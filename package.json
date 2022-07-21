@@ -1,6 +1,6 @@
 {
   "name": "discord-bck",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Bot Oficial del servidor BeckS",
   "main": "index.js",
   "dependencies": {
