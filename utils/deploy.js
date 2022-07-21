@@ -21,7 +21,7 @@ module.exports = {
       }
     }
 
-    const rest = new REST({ version: "9" }).setToken(process.env.TOKEN_MAIN);
+    const rest = new REST({ version: "9" }).setToken(process.env.TOKEN);
 
     (async () => {
       console.log("%cRecargando las apliaciones (/)", styles);

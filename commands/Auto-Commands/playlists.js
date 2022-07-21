@@ -1,4 +1,3 @@
-/* eslint-disable no-await-in-loop */
 const { MessageEmbed, MessageActionRow, MessageButton } = require("discord.js");
 let time = false;
 
