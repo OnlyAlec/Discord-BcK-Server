@@ -6,12 +6,12 @@ const { Client, Collection, Intents } = require("discord.js");
 const BcK = new Client({
   intents: [
     Intents.FLAGS.GUILDS,
-    Intents.FLAGS.GUILD_MESSAGES,
     Intents.FLAGS.GUILD_MEMBERS,
+    Intents.FLAGS.GUILD_MESSAGES,
     Intents.FLAGS.GUILD_PRESENCES,
     Intents.FLAGS.GUILD_VOICE_STATES,
   ],
-  partials: ["MESSAGE", "CHANNEL", "REACTION"],
+  partials: ["MESSAGE", "CHANNEL", "REACTION", "GUILD_MEMBER"],
 });
 
 const prefix = process.env.PREFIX_MAIN;
@@ -71,7 +71,7 @@ BcK.on("interactionCreate", async (interaction) => {
 
 // Log In
 console.log("%c\tLog-in client...", "background: teal; color: white");
-BcK.login(process.env.TOKEN_MAIN);
+BcK.login(process.env.TOKEN);
 
 // Servidor WEB
 const http = require("http");
