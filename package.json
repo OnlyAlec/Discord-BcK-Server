@@ -28,7 +28,8 @@
     "start": "./node_modules/node/bin/node index.js",
     "lint": "eslint -f mo .",
     "lint:fix": "eslint . --fix",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "version": "auto-changelog -p && git add CHANGELOG.md"
   },
   "repository": {
     "type": "git",
