@@ -3,10 +3,10 @@ const { MessageEmbed, MessageActionRow, MessageButton } = require("discord.js");
 
 module.exports = {
   data: new SlashCommandBuilder()
-    .setName("embeds_colors")
-    .setDescription("Muestra los colores disponibles para los roles!"),
-  // name: "embeds_colores",
-  // description: "Muestra los colores disponibles para los roles",
+  // .setName("embeds_colors")
+  // .setDescription("Muestra los colores disponibles para los roles!"),
+  name: "embeds_colores",
+  description: "Muestra los colores disponibles para los roles",
   async execute(interaction) {
     console.log(
       `%c❖ \t Se envio un embed colors `,
