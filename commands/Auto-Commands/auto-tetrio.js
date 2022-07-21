@@ -47,7 +47,7 @@ async function getInfoUser(dataMember) {
       const match_data = await response.json();
 
       let returnData = { user: user_data, match: match_data.data.records[0] };
-      if (returnData.match.endcontext[1].username === user) {
+      if (returnData.match.endcontext[1].user.username === user) {
         returnData.match.endcontext.reverse(); // Para mantener el usuario en posicion 0
       }
       console.log("%c❖\tUsuario API:\n", "background:#CD5C5C; color: white");
@@ -96,17 +96,17 @@ function sendEmbed(dataTetrio, BcK, dataMember) {
       },
       {
         name: "Estadisticas",
-        value: `<:pieces:998578496790085782> ***PPS:*** ${dataTetrio.match.endcontext[0].points.tertiary.toFixed(
+        value: `<:pieces:998578496790085782> ***PPS:*** **${dataTetrio.match.endcontext[0].points.tertiary.toFixed(
           2
-        )} | ${dataTetrio.match.endcontext[1].points.tertiary.toFixed(
+        )}** | ${dataTetrio.match.endcontext[1].points.tertiary.toFixed(
           2
-        )} \n<:attack:998578497809305640> ***APM:*** ${dataTetrio.match.endcontext[0].points.secondary.toFixed(
+        )} \n<:attack:998578497809305640> ***APM:*** **${dataTetrio.match.endcontext[0].points.secondary.toFixed(
           2
-        )} | ${dataTetrio.match.endcontext[1].points.secondary.toFixed(
+        )}** | ${dataTetrio.match.endcontext[1].points.secondary.toFixed(
           2
-        )}\n<:score:998578499088564254> ***VS:*** ${dataTetrio.match.endcontext[0].points.extra.vs.toFixed(
+        )}\n<:score:998578499088564254> ***VS:*** **${dataTetrio.match.endcontext[0].points.extra.vs.toFixed(
           2
-        )} | ${dataTetrio.match.endcontext[1].points.extra.vs.toFixed(2)}`,
+        )}** | ${dataTetrio.match.endcontext[1].points.extra.vs.toFixed(2)}`,
         inline: true,
       },
       {
