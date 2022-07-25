@@ -129,7 +129,12 @@ module.exports = {
         .setCustomId(`${this.data.name} : ⬜`)
         .setLabel("")
         .setStyle("SECONDARY")
-        .setEmoji("⬜")
+        .setEmoji("⬜"),
+      new MessageButton()
+        .setCustomId(`${this.data.name} : 🟪`)
+        .setLabel("")
+        .setStyle("SECONDARY")
+        .setEmoji("🟪")
     );
 
     await interaction.editReply({
