@@ -2,11 +2,11 @@ const { SlashCommandBuilder } = require("@discordjs/builders");
 const { MessageEmbed, MessageActionRow, MessageButton } = require("discord.js");
 
 module.exports = {
-  data: new SlashCommandBuilder(),
-  // .setName('embeds_playlists')
-  // .setDescription('Muestra todas las playlist que ponemos a tu disposicion!'),
-  name: "embeds_playlists",
-  description: "Muestra todas las playlist que ponemos a tu disposicion!",
+  data: new SlashCommandBuilder()
+    .setName('embeds_playlists')
+    .setDescription('Muestra todas las playlist que ponemos a tu disposicion!'),
+  //name: "embeds_playlists",
+  //description: "Muestra todas las playlist que ponemos a tu disposicion!",
   async execute(interaction) {
     console.log(
       `%c❖ \t Se envio un embed playlist `,
