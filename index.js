@@ -51,7 +51,6 @@ BcK.on("interactionCreate", async (interaction) => {
 
   const command = BcK.commands.get(interaction.commandName);
   if (!command) return;
-
   try {
     await command.execute(interaction, BcK);
   } catch (error) {
