@@ -8,12 +8,14 @@
     "@discordjs/rest": "^0.3.0",
     "axios": "^0.26.0",
     "discord-api-types": "^0.27.3",
-    "discord.js": "^13.6.0",
+    "discord.js": "^13.9.1",
     "dotenv": "^16.0.0",
     "jsdom": "^19.0.0",
     "node": "^17.4.0",
     "node-fetch": "^2.6.1",
-    "request": "^2.88.2"
+    "request": "^2.88.2",
+    "sequelize": "^6.21.3",
+    "sqlite3": "^5.0.10"
   },
   "devDependencies": {
     "eslint": "^8.9.0",

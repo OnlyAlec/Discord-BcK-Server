@@ -1,7 +1,12 @@
 // TODO: Agregar cooldown
 const fs = require("fs");
 require("dotenv").config();
-const { Client, Collection, Intents } = require("discord.js");
+const {
+  Client,
+  Collection,
+  Intents,
+  GatewayIntentBits,
+} = require("discord.js");
 
 const BcK = new Client({
   intents: [
@@ -10,6 +15,7 @@ const BcK = new Client({
     Intents.FLAGS.GUILD_MESSAGES,
     Intents.FLAGS.GUILD_PRESENCES,
     Intents.FLAGS.GUILD_VOICE_STATES,
+    GatewayIntentBits.Guilds,
   ],
   partials: ["MESSAGE", "CHANNEL", "REACTION", "GUILD_MEMBER"],
 });
