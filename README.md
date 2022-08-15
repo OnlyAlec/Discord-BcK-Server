@@ -10,7 +10,7 @@
 	<img src="https://github.com/OnlyAlec/Discord-BcK-Server/actions/workflows/ESLint-Bot.yml/badge.svg?branch=main">
   </a>
   <img alt="GitHub last commit (branch)" src="https://img.shields.io/github/last-commit/OnlyAlec/Discord-BcK-Server/main?color=informational&logo=Github&style=flat">
-  <img alt="GitHub tag (latest SemVer)" src="https://img.shields.io/github/v/tag/OnlyAlec/Discord-BcK-Server?color=slateblue&label=Version&logo=Github&sort=semver">
+  <img alt="GitHub tag (latest SemVer)" src="https://img.shields.io/github/v/tag/OnlyAlec/Discord-BcK-Server?color=slateblue&label=Version&logo=Github">
   <img alt="Status Code" src="https://img.shields.io/lgtm/grade/javascript/github/OnlyAlec/Discord-BcK-Server.svg?logo=lgtm&logoWidth=18">
   <!-- Links -->
 <br><br>
