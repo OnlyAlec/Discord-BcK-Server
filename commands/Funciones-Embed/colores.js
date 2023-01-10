@@ -134,7 +134,11 @@ async function embeds(interaction, color_Old, color_New) {
       iconURL: "https://i.imgur.com/9mMUVDh.png",
       url: "https://github.com/OnlyAlec/Discord-BcK-Server",
     })
-    .addField("Tu nuevo color ahora es: ", `${color_New}   ${emoji_New}`, true);
+    .addFields({
+      name: "Tu nuevo color ahora es: ",
+      value: `${color_New}   ${emoji_New}`,
+      inline: true,
+    });
 
   const change = new MessageEmbed()
     .setColor("RANDOM")
